@@ -1,16 +1,5 @@
 @echo off
 
-:: Check for changes to be added
-git diff-index --quiet HEAD --
-if %errorlevel% equ 0 (
-    echo ##############################
-    echo ##############################
-    echo ALL UP TO DATE
-    echo ##############################
-    echo ##############################
-    pause
-    exit /b 0
-)
 
 :: Add files to Git
 git add .
